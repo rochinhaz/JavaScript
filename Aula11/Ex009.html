@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições2</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Vivendo em: <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="consultar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var n = window.document.querySelector('input#nac')
+
+        function consultar(){
+            var res = window.document.querySelector('div#res')
+            var pais = (n.value)
+            if(pais == 'Brasil'){
+                res.innerHTML +="<p>Você é <strong>brasileiro</strong></p>";
+                } else {
+                    if(pais != 'Brasil'){
+                res.innertHTML +="<p>Você é <strong>estrangeiro</strong></p>";
+                    }
+                }
+        
+        }
+    </script>
+</body>
+</html>
