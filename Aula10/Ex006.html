@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div#area{
+            font: normal 15pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Exemplos de DOM events list-->
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        interaja...
+    </div>
+
+    <script>
+        /*var area = window.document.getElementById('area');
+             area.addEventListener('click', clicar)
+             area.addEventListener('mouseenter', entrar)
+             area.addEventListener('mouseout', sair)
+        outra maneira de adicionar eventos sem precisar coloca-los na tag div
+        */
+
+
+        function clicar() {
+            var a = window.document.getElementById('area');
+            a.innerText = 'Clicou';
+            a.style.background = 'red';
+        }
+
+        function entrar(){
+            var a = window.document.getElementById('area');
+            a.innerText = 'Entrou';
+        }
+
+        function sair(){
+            var a = window.document.getElementById('area');
+            a.innerText='Saiu';
+        }
+    </script>
+</body>
+</html>
