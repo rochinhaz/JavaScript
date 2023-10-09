@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome');
+        document.write(`Seu nome tem ${nome.length} letras<br>`);
+        document.write(`Seu nome em maiuscula: ${nome.toUpperCase()}<br>`);
+        document.write(`Seu nome em minuscula: ${nome.toLowerCase()}`);
+
+        /*
+        Conversão com numeros
+        var n1= 1540.2
+        n1.toFixed(2)  -- 2 casas decimais
+        n1.toFixed(2).replace('.' , ',')  -- 2 casa e troca ponto por virgula
+        n1.toLocaleString ('pt-BR', {style : 'currency', currency: 'BRL'})   -- coloca em reais R$
+        */
+    </script>
+</body>
+</html>

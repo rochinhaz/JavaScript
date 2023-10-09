@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa</title>
+    <style>
+        body{
+            background-color: darkslategray;
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum deleniti alias voluptates excepturi sit, dolorum temporibus atque modi, quidem ratione provident quis laboriosam placeat obcaecati molestiae velit magnam facere veritatis.</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um numero'));
+        var n2 = Number.parseFloat(window.prompt('Digite outro numero'));
+        var soma = n1 + n2;
+        window.alert(`A soma entre ${n1} e ${n2} é igual a = ${soma}`);
+        /*
+        Typeof() retorna tipo da variavel
+        Conversao String para inteiro/real: Number.parseFloat(n), Number.parseInt(n), Number(n)
+        Conversao de inteiro para String: String(n), n.toString() 
+        n.lenght = mostra quantos caracteres tem a strin
+        n.toUpperCase() = transforma em letra maiuscula
+        n.toLowerCase()  = transforma em minuscula      
+        */
+    </script>
+</body>
+</html>
