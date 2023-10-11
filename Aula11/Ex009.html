@@ -21,13 +21,13 @@
 
         function consultar(){
             var res = window.document.querySelector('div#res')
-            var pais = (n.value)
-            if(pais == 'Brasil'){
+            //var pais = (n.value)
+            if(n.value == 'Brasil'){
                 res.innerHTML +="<p>Você é <strong>brasileiro</strong></p>";
-                } else {
-                    if(pais != 'Brasil'){
+            } else if (n.value != 'Brasil'){
+                
                 res.innertHTML +="<p>Você é <strong>estrangeiro</strong></p>";
-                    }
+                
                 }
         
         }
